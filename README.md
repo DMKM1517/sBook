@@ -22,3 +22,4 @@ http://localhost:8080/simple-ecom/#/
  * [Redis](http://redis.io/) 
  * [Jedis](https://github.com/xetorthio/jedis)
  * [Apache Tomcat 8.0](http://tomcat.apache.org/download-80.cgi)
+ * [AngularJS](https://github.com/angular/angular.js)
