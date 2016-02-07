@@ -1,0 +1,27 @@
+<div class="col-md-offset-2 col-md-6">
+	<h2>New Book</h2>
+	<form>
+		<div class="form-group">
+		    <label for="name">Name</label>
+		    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="name">
+		</div>
+		<div class="form-group">
+		    <label for="author">Author</label>
+		    <input type="text" class="form-control" id="author" placeholder="Author" ng-model="author">
+		</div>
+		<div class="form-group">
+		    <label for="category">Category</label>
+		    <input type="text" class="form-control" id="category" placeholder="Category" ng-model="category">
+		</div>
+		<div class="form-group">
+		    <label for="cost">Cost</label>
+		    <input type="number" class="form-control" id="cost" placeholder="10.00" ng-model="cost">
+		</div>
+		<div class="form-group">
+		    <label for="tags">Tags</label>
+		    <input type="text" class="form-control" id="tags" placeholder="Tag1@5,Tag2@3,Tag3@2" ng-model="tags">
+		</div>
+		<button class="btn btn-success" ng-click="create($event)">Create</button>
+		<p class="text-danger">{{ message }}</p>
+	</form>
+</div>

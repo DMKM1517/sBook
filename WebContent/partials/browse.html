@@ -1,0 +1,34 @@
+<div class="col-md-offset-1 col-md-6">
+	<h1>{{ product.name }}</h1>
+	<form class="form-inline">
+		<div class="form-group">
+			<label for="quantity">Quantity</label>
+			<input type="number" class="form-control" id="quantity" ng-model="quantity"/>
+		</div>
+		<button class="btn btn-primary" ng-click="add($event)">Add to cart</button>
+	</form>
+	<br>
+	<table class="table table-stripped">
+		<tr ng-repeat="(key,value) in product">
+			<td><strong>{{ key }}</strong></td>
+			<td>{{ value }}</td>
+		</tr>
+	</table>
+</div>
+<div class="col-md-offset-1 col-md-4">
+	<h3>Also you might like</h3>
+	<table class="table table-stripped">
+		<thead>
+			<tr>
+				<td><strong>Book</strong></td>
+				<td><strong>Tag</strong></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(prod,tag) in recomendations">
+				<td><a href="#browse/{{ prod }}">{{ prod }}</a></td>
+				<td>{{ tag }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

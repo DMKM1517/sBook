@@ -1,0 +1,8 @@
+<h1>{{ tag }}</h1>
+<p>The following products are listed as per the hit rate</p>
+<table class="table table-stripped">
+	<tr ng-repeat="value in values track by $index">
+		<td><strong>{{ $index+1 }}</strong></td>
+		<td><a href="#product/{{ value }}">{{ value }}</a></td>
+	</tr>
+</table>

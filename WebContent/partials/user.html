@@ -1,0 +1,59 @@
+<div class="col-md-offset-1 col-md-6">
+	<h1>Books</h1>
+	<p ng-show="!loggedin">To see the details or buy, please login first</p>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="product in products track by $index">
+				<td>{{ $index+1 }}</td>
+				<td><a href="#browse/{{ product }}">{{ product }}</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="col-md-offset-1 col-md-4">
+	<div ng-show="loggedin">
+		<a href="#/user/{{ sessionid }}" class="btn btn-primary">My account</a>
+		<button class="btn btn-default" ng-click="logout($event)">Log out</button>
+		<br>
+		<pre class="text-success" ng-show="bought"><br>{{ receipt }}</pre>
+		<div ng-show="!bought">
+			<h3>My cart</h3>
+			<table class="table table-stripped">
+				<thead>
+					<tr>
+						<td><strong>Product</strong></td>
+						<td><strong>Qty</strong></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="(prod,qty) in cart track by $index">
+						<td>{{ prod }}</td>
+						<td>{{ qty }}</td>
+						<td><button class="btn btn-danger" ng-click="remove($event,prod)">X</button>
+					</td>
+				</tbody>
+			</table>
+			<br>
+			<button class="btn btn-success" ng-show="!cartempty" ng-click="buy($event)">Buy</button>
+		</div>
+	</div>
+	<form ng-show="!loggedin">
+		<div class="form-group">
+		    <label for="username">Username</label>
+		    <input type="text" class="form-control" id="username" placeholder="Username" ng-model="username">
+		</div>
+		<div class="form-group">
+		    <label for="password">Password</label>
+		    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="password">
+		</div>
+		<button class="btn btn-primary" ng-click="login($event)">Login</button>
+		<p class="text-danger">{{ message }}</p>
+		<a href="#new_user" class="btn btn-success">Register</a>
+	</form>
+</div>

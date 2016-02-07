@@ -1,0 +1,17 @@
+<div class="col-md-offset-1 col-md-8">
+	<h1>{{ product.name }}</h1>
+	<table class="table table-stripped">
+		<tr ng-repeat="(key,value) in product">
+			<td><strong>{{ key }}</strong></td>
+			<td>{{ value }}</td>
+		</tr>
+		<tr>
+			<td><strong>Visits today</strong></td>
+			<td>{{ product_visits }}</td>
+		</tr>
+		<tr>
+			<td><strong>Purchases today</strong></td>
+			<td>{{ product_purchases }}</td>
+		</tr>
+	</table>
+</div>
