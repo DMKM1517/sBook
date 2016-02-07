@@ -10,6 +10,7 @@ To be runned with:
 * Redis 2.6.9
 
 It's no necessary to include AngularJS.
+
 Redis server must be running. 
 
 Default address to connect to 
