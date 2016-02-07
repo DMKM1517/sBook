@@ -9,7 +9,7 @@ To be runned with:
 * JRE 1.8
 * Redis 2.6.9
 
-It's no necessary to include AngularJS
+It's no necessary to include AngularJS. Redis server must be running. 
 
 Default address to connect to 
 
