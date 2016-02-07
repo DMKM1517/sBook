@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>sBook</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
 <script type="text/javascript" src="js/angular-cookies.min.js"></script>
 <script type="text/javascript" src="js/controllers.js"></script>
