@@ -19,7 +19,7 @@ Default address to connect to
 http://localhost:8080/simple-ecom/#/
 ```
 
-####Video demo available [here]()
+####Video demo available [here](https://youtu.be/jiU1_J6RcBg)
 
 ### Some Links:
 
