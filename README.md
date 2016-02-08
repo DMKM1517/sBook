@@ -7,7 +7,7 @@ To be runned with:
 
 * Apache Tomcat 8.0 
 * JRE 1.8
-* Redis 2.6.9
+* Redis 3.0.7
 
 It's no necessary to include AngularJS.
 
