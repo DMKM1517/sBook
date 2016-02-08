@@ -9,7 +9,7 @@ To be runned with:
 * JRE 1.8
 * Redis 3.0.7
 
-It's no necessary to include AngularJS.
+It's not necessary to include AngularJS.
 
 Redis server must be running. 
 
@@ -18,6 +18,8 @@ Default address to connect to
 ```javascript
 http://localhost:8080/simple-ecom/#/
 ```
+
+####Video demo available [here]()
 
 ### Some Links:
 
